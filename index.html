@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Revenue and Expenses</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="containner">
+            <h5>Revenue  and Expenses</h1>
+            <div class="display">
+                <h1>Account Balance</h2>
+                <p id="balance">20000</p>
+            </div>
+            <div class="box">
+                <div class="income">
+                    <h2 id="revenue">Revenue</h2>
+                    <p id="num_re">20000</p>
+                </div>
+                <div class="expen">
+                    <h2 id="expen">Expenses</h2>
+                    <p id="num_ex">0</p>
+                </div>
+            </div>
+            <div class="transaction">
+                <h1>Transaction History</h1>
+                <ul id="list">
+                    
+                </ul>
+            </div>
+            <div class="addtransaction">
+                <h1>Add Transaction</h1>
+                <form class="detail">
+                    <label for="text">Topic</label>
+                    <input id="in_t" type="text" placeholder="Specify Transaction">
+                    <label for="text">Ammount</label>
+                    <span>+ Revenue,- Expenses</span>
+                    <input id="in_a" type="number" placeholder="Specify Amount">
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

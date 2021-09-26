@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --maincha: #ffa822;
+    --num:#134e6f;
+    --shadow: 0 1px 3px rgba(0,0,0,0.12);
+    --income: #1ac0c6;
+    --expen: #ff6150;
+    --border: gainsboro;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.containner {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h5 {
+    color: var(--num);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+h1 {
+    color: var(--maincha);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.display {
+    margin: 2rem auto;
+    width: 400px;
+    text-align: left;
+}
+
+.display p {
+    margin-top: 1rem;
+    color: var(--num);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.box {
+    margin: 1.5rem auto;
+    padding: 30px;
+    width: 410px;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.income {
+    border-right: 0.2rem solid var(--border);
+    padding: 0 3rem 0 1rem
+}
+
+.income h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--num);
+}
+
+.income p {
+    margin-top: 0.5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--income);
+}
+
+.expen {
+    padding: 0 1rem 0 3rem;
+
+}
+.expen h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--num);
+}
+
+.expen p {
+    margin-top: 0.5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--expen);
+}
+
+.transaction {
+    margin: 2rem auto;
+    width: 400px;
+    text-align: left;
+}
+
+.transaction h1 {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.15rem solid var(--border);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1rem;
+
+}
+
+.plus {
+    margin-top: 1rem;
+    width: 400px;
+    box-shadow: var(--shadow);
+    border-right: 0.5rem solid var(--income);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.minus {
+    margin-top: 1rem;
+    width: 400px;
+    box-shadow: var(--shadow);
+    border-right: 0.5rem solid var(--expen);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.btndel {
+    cursor: pointer;
+    background-color: var(--expen);
+    border: 0px;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute; 
+    left: auto;
+    transform: translate(-170%,-20%);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.btndel:hover {
+    opacity: 1;
+}
+
+
+.addtransaction {
+    width: 400px;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.addtransaction h1 {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.15rem solid var(--border);
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.detail label{
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--num);
+}
+
+.detail input {
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid var(--border);
+}
+
+.detail button[type="submit"]{
+    margin-top: 2rem;
+    border: 0px;
+    padding: 15px;
+    background-color: var(--maincha);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+}
+
+
+
+
